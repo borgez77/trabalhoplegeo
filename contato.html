@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contato</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
   <link rel="icon" href="favicon.png">
 
   <style>
@@ -19,8 +18,9 @@
       letter-spacing: 1px;
     }
 
+    /* Hero igual à index */
     .hero {
-      background: linear-gradient(135deg, #0d6efd, #1a1a1a);
+      background: linear-gradient(135deg, #0bd400, #000000);
       color: white;
       padding: 70px 20px;
       text-align: center;
@@ -38,6 +38,7 @@
       margin-top: 10px;
     }
 
+    /* Caixas brancas */
     .content-box {
       background: white;
       padding: 25px;
@@ -46,20 +47,80 @@
       margin: 25px 0;
     }
 
+    .content-box h4 {
+      color: #333; /* neutro, sem azul */
+      font-weight: bold;
+      margin-bottom: 15px;
+      border-bottom: 2px solid #ccc;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
+    /* Informações */
+    .contact-info p {
+      margin: 6px 0;
+      font-size: 1rem;
+    }
+
+    .contact-info strong {
+      color: #198754;
+    }
+
+    /* Formulário */
+    form .form-control {
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+
+    form .form-control:focus {
+      border-color: #0d6efd;
+      box-shadow: 0 0 6px rgba(13,110,253,0.3);
+    }
+
+    form .btn {
+      border-radius: 8px;
+      padding: 10px 20px;
+    }
+
+    /* Redes sociais */
+    .social-links a {
+      display: inline-block;
+      margin-right: 12px;
+      font-size: 1rem;
+      color: #0d6efd;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .social-links a:hover {
+      color: #198754;
+    }
+
+    /* Rodapé separado */
     footer {
       background-color: #212529;
       color: #ccc;
       padding: 15px;
       text-align: center;
-      margin: 30px auto 0 auto;
-      max-width: 1200px;
-      border-radius: 10px;
+      margin: 40px auto;   /* afasta do conteúdo */
+      max-width: 1300px;   /* largura parecida com content-box */
+      border-radius: 10px; /* bordas arredondadas */
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
     }
 
     footer a {
       color: #0d6efd;
       text-decoration: none;
     }
+    .navbar-nav .nav-link {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #0d6efd;
+}
+
   </style>
 </head>
 <body>
@@ -73,73 +134,81 @@
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li><li class="nav-item"><a class="nav-link" href="desafios.html">Desafios</a></li><li class="nav-item"><a class="nav-link" href="problema.html">Problema de Pesquisa</a></li><li class="nav-item"><a class="nav-link" href="quiz.html">Quiz</a></li><li class="nav-item"><a class="nav-link active" href="contato.html">Contato</a></li>
-          </ul>
-        </div>
-      </div>
+       <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+                        <li class="nav-item"><a class="nav-link" href="desafios.html">Desafios</a></li>
+                        <li class="nav-item"><a class="nav-link" href="problema.html">Problema de Pesquisa</a></li>
+                        <li class="nav-item"><a class="nav-link" href="quiz.html">Quiz</a></li>
+                         <li class="nav-item"><a class="nav-link active" href="contato.html">Contato</a></li>
+                    </ul>
+                </div>
+            </div>
     </nav>
 
     <!-- Hero -->
     <div class="hero">
-      <h1>Fale Conosco</h1>
-      <p>Entre em contato para dúvidas, sugestões ou parcerias</p>
+      <h1>Entre em Contato</h1>
+      <p>Estamos prontos para ouvir você</p>
     </div>
 
-    <!-- Contato -->
+    <!-- Formulário -->
+    <div class="content-box">
+      <h4>Envie uma Mensagem</h4>
+      <form action="https://formspree.io/f/mexample" method="POST">
+        <div class="mb-3">
+          <label for="nome" class="form-label">Nome</label>
+          <input type="text" class="form-control" id="nome" name="nome" required>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">E-mail</label>
+          <input type="email" class="form-control" id="email" name="_replyto" required>
+        </div>
+        <div class="mb-3">
+          <label for="assunto" class="form-label">Assunto</label>
+          <input type="text" class="form-control" id="assunto" name="assunto">
+        </div>
+        <div class="mb-3">
+          <label for="mensagem" class="form-label">Mensagem</label>
+          <textarea class="form-control" id="mensagem" name="mensagem" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-dark">Enviar</button>
+      </form>
+      
+    </div>
+
+    <!-- Mapa + Informações -->
     <div class="content-box">
       <div class="row">
-        <!-- Informações -->
-        <div class="col-md-5 mb-4">
-          <h4>📌 Informações de Contato</h4>
-          <p><strong>Endereço:</strong> Av. Exemplo, 123 - São Paulo, SP</p>
-          <p><strong>Telefone:</strong> (11) 99999-9999</p>
-          <p><strong>Email:</strong> contato@exemplo.com</p>
-          <h5 class="mt-3">🌐 Redes Sociais</h5>
-          <p>
-            <a href="#" class="text-decoration-none">Facebook</a> · 
-            <a href="#" class="text-decoration-none">Instagram</a> · 
-            <a href="#" class="text-decoration-none">LinkedIn</a>
-          </p>
+        <!-- Mapa -->
+        <div class="col-md-6 mb-4 mb-md-0">
+          <h4>📍 Nossa Localização</h4>
+          <div class="ratio ratio-16x9">
+           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12025.826213700095!2d-46.4090519156299!3d-24.002638025715353!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce1c53ea75d47f%3A0xebed7380dc247256!2sLitoral%20Plaza!5e0!3m2!1spt-BR!2sbr!4v1759195805226!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
         </div>
 
-        <!-- Formulário -->
-        <div class="col-md-7">
-          <h4>📩 Envie uma Mensagem</h4>
-          <form action="https://formspree.io/f/mexample" method="POST">
-            <div class="mb-3">
-              <label for="nome" class="form-label">Nome</label>
-              <input type="text" class="form-control" id="nome" name="nome" required>
+        <!-- Informações (centralizadas verticalmente) -->
+        <div class="col-md-6 d-flex align-items-center">
+          <div class="contact-info text-center w-100">
+            <h4>📌 Informações de Contato</h4>
+            <p><strong>Endereço:</strong> Av. Ayrton Senna da Silva, 1511 - Xixová, Praia Grande - SP, 11726-900</p>
+            <p><strong>Telefone:</strong> (13) 4002-8922</p>
+            <p><strong>Email:</strong> suporte.randommail@gmail.com</p>
+
+            <h5 class="mt-3">🌐 Redes Sociais</h5>
+            <div class="social-links">
+              <a href="#">Facebook</a>
+              <a href="#">Instagram</a>
+              <a href="#">LinkedIn</a>
             </div>
-            <div class="mb-3">
-              <label for="email" class="form-label">E-mail</label>
-              <input type="email" class="form-control" id="email" name="_replyto" required>
-            </div>
-            <div class="mb-3">
-              <label for="mensagem" class="form-label">Mensagem</label>
-              <textarea class="form-control" id="mensagem" name="mensagem" rows="4" required></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary">Enviar</button>
-          </form>
-          <small class="text-muted d-block mt-2">⚠️ Este formulário usa o serviço Formspree como exemplo.</small>
+          </div>
         </div>
       </div>
     </div>
+  </div> <!-- fecha container -->
 
-    <!-- Mapa -->
-    <div class="content-box">
-      <h4>📍 Nossa Localização</h4>
-      <div class="ratio ratio-16x9">
-        <iframe 
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.904902805032!2d-46.66232528502125!3d-23.576002768568233!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c4a5e7a3f1%3A0x6a9f5cb918f0e44d!2sPaulista%20Avenue!5e0!3m2!1sen!2sbr!4v1678901234567"
-          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy">
-        </iframe>
-      </div>
-    </div>
-  </div>
-
-  <!-- Rodapé -->
+  <!-- Rodapé separado -->
   <footer>
     <p>© 2025 - Desenvolvido usando 
       <a href="https://getbootstrap.com/" target="_blank">Bootstrap</a>
