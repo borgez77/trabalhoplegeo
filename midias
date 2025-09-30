@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="icon" href="favicon.png">
+
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        .navbar-brand {
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #ff6f61, #1a1a1a);
+            color: white;
+            padding: 70px 20px;
+            text-align: center;
+            border-radius: 12px;
+            margin-top: 20px;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+        }
+
+        .content-box {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+            margin: 15px 0;
+        }
+
+        footer {
+            background-color: #212529;
+            color: #ccc;
+            padding: 15px;
+            text-align: center;
+            border-radius: 10px;
+            margin-top: 30px;
+        }
+
+        footer a {
+            color: #0d6efd;
+            text-decoration: none;
+        }
+
+        .navbar-nav .nav-link {
+            font-size: 1.2rem;
+            font-weight: 500;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #0d6efd;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark rounded mt-3 shadow">
+            <div class="container-fluid">
+                <a class="navbar-brand d-flex align-items-center ms-2" href="index.html">
+                    <img src="favicon.png" alt="Logo Grupo 7" width="49" height="49" class="ms-3 me-3 rounded">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegação">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+                        <li class="nav-item"><a class="nav-link" href="desafios.html">Desafios</a></li>
+                        <li class="nav-item"><a class="nav-link" href="problema.html">Problema de Pesquisa</a></li>
+                        <li class="nav-item"><a class="nav-link" href="quiz.html">Quiz</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="midias.html">Mídias</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero -->
+        <div class="hero">
+            <h1>Mídias</h1>
+            <p>Vídeos, áudios, imagens e infográfico</p>
+        </div>
+
+        <!-- Linha 1: Vídeo e Áudio -->
+        <div class="row">
+            <div class="col-md-6">
+                <div class="content-box">
+                    <h2>🎥 Vídeo</h2>
+                    <iframe width="100%" height="250" src="https://www.youtube.com/embed/TODO"
+                        title="Vídeo sobre mineração e clima" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    <p class="mt-2">Este vídeo apresenta os impactos da mineração de criptomoedas no consumo de energia e no meio ambiente.</p>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="content-box">
+                    <h2>🎧 Áudio</h2>
+                    <audio controls class="w-100">
+                        <source src="audio.mp3" type="audio/mpeg">
+                        Seu navegador não suporta áudio HTML5.
+                    </audio>
+                    <p class="mt-2">Um breve podcast explicando como a emissão de carbono da mineração digital contribui para as mudanças climáticas.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Linha 2: Imagem 1 e Imagem 2 -->
+        <div class="row">
+            <div class="col-md-6">
+                <div class="content-box">
+                    <h2>🖼️ Imagem 1</h2>
+                    <img src="images/mineracao.png" alt="Mineração de criptomoedas" class="img-fluid rounded shadow">
+                    <p class="mt-2">A imagem ilustra as grandes fazendas de mineração, com máquinas em funcionamento 24h por dia.</p>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="content-box">
+                    <h2>🖼️ Imagem 2</h2>
+                    <img src="images/poluicao.png" alt="Impacto ambiental" class="img-fluid rounded shadow">
+                    <p class="mt-2">Poluição resultante do uso de energia não renovável para alimentar os equipamentos de mineração.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Linha 3: Infográfico -->
+        <div class="row">
+            <div class="col-md-12">
+                <div class="content-box">
+                    <h2>📊 Infográfico</h2>
+                    <div class="row text-center">
+                        <div class="col-md-4">
+                            <div class="card shadow">
+                                <div class="card-body">
+                                    <h5>⚡ Energia</h5>
+                                    <p>O Bitcoin consome mais energia por ano que países inteiros como a Argentina.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card shadow">
+                                <div class="card-body">
+                                    <h5>🌍 Clima</h5>
+                                    <p>Grande parte dessa energia vem de combustíveis fósseis, aumentando as emissões de CO₂.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card shadow">
+                                <div class="card-body">
+                                    <h5>💡 Soluções</h5>
+                                    <p>Uso de energias renováveis e mudança para Proof of Stake reduzem drasticamente o impacto.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="mt-3 text-center">Infográfico simplificado mostrando a relação entre mineração, energia e clima.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Rodapé -->
+    <footer class="container mt-4 content-box">
+        <p>© 2025 - Desenvolvido usando <a href="https://getbootstrap.com/" target="_blank">Bootstrap</a></p>
+    </footer>
+</body>
+</html>
