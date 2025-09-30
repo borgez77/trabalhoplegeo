@@ -54,62 +54,61 @@
             margin-bottom: 15px;
         }
 
-        .navbar-nav .nav-link {
-            font-size: 1.2rem;
-            font-weight: 500;
-        }
-
-        .navbar-nav .nav-link:hover {
-            color: #0d6efd;
-        }
-
-        .destaque {
-            font-size: 1.5rem;
-            font-weight: bold;
-        }
-
-        /* Rodapé igual ao desafios.html */
         footer {
             background-color: #212529;
             color: #ccc;
             padding: 15px;
             text-align: center;
-            margin: 30px auto 0 auto; /* centraliza */
-            max-width: 1300px;        /* largura máxima */
-            border-radius: 10px;      /* bordas arredondadas */
+            border-radius: 10px;
+            margin-top: 30px;
         }
 
         footer a {
             color: #0d6efd;
             text-decoration: none;
         }
+         .navbar-nav .nav-link {
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+
+        .navbar-nav .nav-link:hover {
+        color: #0d6efd;
+                 }
+
+         .destaque {
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+        
     </style>
 </head>
 <body>
     <div class="container">
         <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark rounded mt-3 shadow">
-            <div class="container-fluid">
-                <a class="navbar-brand d-flex align-items-center ms-2" href="index.html">
-                    <img src="favicon.png" alt="Logo Grupo 7" width="49" height="49" class="ms-3 me-3 rounded">
-                </a>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark rounded mt-3 shadow">
+    <div class="container-fluid">
+        <a class="navbar-brand d-flex align-items-center ms-2" href="index.html">
+            <img src="favicon.png" alt="Logo Grupo 7" width="49" height="49" class="ms-3 me-3 rounded">
+        </a>
 
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegação">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegação">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link active" href="index.html">Início</a></li>
-                        <li class="nav-item"><a class="nav-link" href="desafios.html">Desafios</a></li>
-                        <li class="nav-item"><a class="nav-link" href="problema.html">Problema de Pesquisa</a></li>
-                        <li class="nav-item"><a class="nav-link" href="quiz.html">Quiz</a></li>
-                         <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link active" href="index.html">Início</a></li>
+                <li class="nav-item"><a class="nav-link" href="desafios.html">Desafios</a></li>
+                <li class="nav-item"><a class="nav-link" href="problema.html">Problema de Pesquisa</a></li>
+                <li class="nav-item"><a class="nav-link" href="quiz.html">Quiz</a></li>
+                <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
 
         <!-- Hero -->
         <div class="hero">
@@ -134,33 +133,20 @@
         <!-- Destaques -->
         <div class="content-box">
             <h2>⚡ Pontos Principais</h2>
-            <div class="row align-items-center">
-                <!-- Texto -->
-                <div class="col-md-7">
-                    <div class="highlight">
-                        <h5>Desafios</h5>
-                        <p>Consumo energético altíssimo, uso de energia não renovável e falta de regulação ambiental.</p>
-                    </div>
-                    <div class="highlight">
-                        <h5>Problema de Pesquisa</h5>
-                        <p>Como reduzir o impacto ambiental da mineração de criptomoedas sem inviabilizar a tecnologia blockchain?</p>
-                    </div>
-                </div>
-
-             
+            <div class="highlight">
+                <h5>Desafios</h5>
+                <p>Consumo energético altíssimo, uso de energia não renovável e falta de regulação ambiental.</p>
+            </div>
+            <div class="highlight">
+                <h5>Problema de Pesquisa</h5>
+                <p>Como reduzir o impacto ambiental da mineração de criptomoedas sem inviabilizar a tecnologia blockchain?</p>
             </div>
         </div>
-    </div> <!-- fecha container -->
 
-    <!-- Rodapé -->
-    <footer>
-        <p>© 2025 - Desenvolvido usando 
-            <a href="https://getbootstrap.com/" target="_blank">Bootstrap</a>
-        </p>
-    </footer>
+        <!-- Rodapé -->
+        <footer>
+            <p>© 2025 - Desenvolvido usando <a href="https://getbootstrap.com/" target="_blank">Bootstrap</a></p>
+        </footer>
+    </div>
 </body>
 </html>
-
-
-
-
