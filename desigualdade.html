@@ -204,5 +204,20 @@
         </footer>
 
     </div>
+    <script>
+// Animação suave no menu mobile
+document.addEventListener("DOMContentLoaded", function () {
+    const nav = document.getElementById("navbarNav");
+    const toggler = document.querySelector(".navbar-toggler");
+
+    if (toggler && nav) {
+        toggler.addEventListener("click", () => {
+            nav.classList.toggle("show");
+        });
+    }
+});
+</script>
+
 </body>
 </html>
+
